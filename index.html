@@ -12,10 +12,11 @@
 </head>
 
 <body>
+  <img class="fixed-image" src="./src/image/pexels-tirachard-kumtanom-112571-347145.jpg" alt="">
   <header>
     <section class="logo">
       <img src="./src/image/23407_color.svg" alt="" class="logo">
-      <h1 class="logo">2024 Travel Japan</h1>
+      <h1 class="logo-h3">2024 Travel Japan</h1>
     </section>
     <nav>
       <ul>
@@ -32,20 +33,76 @@
       <h3>Discover Japan’s charm. <br />
         Your unforgettable adventure awaits.</h3>
     </section>
+
+    <section class="info-circles">
+      <h3>Travel Themes</h3>
+      <div class="circles">
+        <div class="circle">
+          <img src="./src/image/shikotsuko.png" alt="Shikotsu Hokkaido">
+          <p>Hokkaido Snow Scenery</p>
+        </div>
+        <div class="circle">
+          <img src="./src/image/sushi.png" alt="Japan Sushi">
+          <p>Japanese Sushi Delights</p>
+        </div>
+        <div class="circle">
+          <img src="./src/image/mountfuji.png" alt="Mount Fuji">
+          <p>The Beauty of Mount Fuji</p>
+        </div>
+        <div class="circle">
+          <img src="./src/image/kyoto.png" alt="Kiyomizu-dera">
+          <p>Kiyomizu-dera Temple</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="empty-container">
+      <h3>Start Planning Your Trip Today</h3>
+    </section>
+
+    <section class="google-map">
+      <h3>Geographical Location of Japan</h3>
+      <p>Japan is an island nation located in East Asia, situated in the Pacific Ocean. It lies to the east of the
+        Korean
+        Peninsula and China, and to the southeast of Russia, separated by the Sea of Japan. Japan consists of four main
+        islands—Honshu, Hokkaido, Kyushu, and Shikoku—and thousands of smaller islands, forming an archipelago. Known
+        for its
+        mountainous terrain and active volcanoes, including Mount Fuji, Japan stretches across several climate zones,
+        from the
+        snowy regions of Hokkaido to the subtropical areas of Okinawa.</p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3529316.505414439!2d135.79040978695969!3d36.850745983888885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34674e0fd77f192f%3A0xf54275d47c665244!2z5pel5pys!5e0!3m2!1szh-TW!2stw!4v1732442442268!5m2!1szh-TW!2stw"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
   </main>
+
+  <footer>
+    <section class="footer-logo">
+      <img src="./src/image/23407_color.svg" alt="網站logo">
+      <h3 style="font-size: 2rem;">Travel Japan</h3>
+      <div class="links">
+        <a href="#"><i class="fa-brands fa-facebook fa-xl"></i> Facebook</a>
+        <a href="#"><i class="fa-brands fa-square-instagram fa-xl"></i> Instagram</a>
+        <a href="#"><i class="fa-brands fa-youtube fa-xl"></i> Youtube</a>
+        <a href="#"><i class="fa-brands fa-square-x-twitter fa-lg"></i> Twitter</a>
+      </div>
+    </section>
+  </footer>
+  <!--轉場效果-->
   <script>
     setInterval(() => {
       let topBackground = document.querySelector("section.background-image");
       let currentBackground = window.getComputedStyle(topBackground).backgroundImage;
 
       if (currentBackground.includes('pexels-ryutaro-5746227.jpg')) {
-        topBackground.style.backgroundImage = 'url("../src/image/pexels-blackbearmedia-1673978.jpg")';
-      } else if (currentBackground.includes('pexels-blackbearmedia-1673978.jpg')) {
-        topBackground.style.backgroundImage = 'url("../src/image/pexels-arkkrapol-anantachote-89654-1571746.jpg")';
-      } else if (currentBackground.includes('pexels-arkkrapol-anantachote-89654-1571746.jpg')) {
-        topBackground.style.backgroundImage = 'url("../src/image/pexels-satoshi-2070033.jpg")';
+        topBackground.style.backgroundImage = 'url("../src/image/pexels-anton-trava-592060-1462124.jpg")'
+      } else if (currentBackground.includes('pexels-anton-trava-592060-1462124.jpg')) {
+        topBackground.style.backgroundImage = 'url("../src/image/pexels-ryutaro-6249716.jpg")';
+      } else if (currentBackground.includes('pexels-ryutaro-6249716.jpg')) {
+        topBackground.style.backgroundImage = 'url("../src/image/pexels-satoshi-2070033.jpg")'
       } else {
-        topBackground.style.backgroundImage = 'url("../src/image/pexels-ryutaro-5746227.jpg")';
+        topBackground.style.backgroundImage = 'url("../src/image/pexels-ryutaro-5746227.jpg")'
       }
     }, 3000);
   </script>
