@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-Hants">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Japan</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+  <header>
+    <section class="logo">
+      <img src="./src/image/23407_color.svg" alt="" class="logo">
+      <h1 class="logo">2024 Travel Japan</h1>
+    </section>
+    <nav>
+      <ul>
+        <li><a href=""><i class="fa-solid fa-plane"></i> Explore</a></li>
+        <li><a href=""><i class="fa-solid fa-user"></i> Member</a></li>
+        <li><a href=""><i class="fa-solid fa-book-open-reader"></i></i> Reservation</a></li>
+        <li><a href=""><i class="fa-solid fa-envelope"></i> Contact us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="background-image">
+      <div class="filter"></div>
+      <h3>Discover Japan’s charm. <br />
+        Your unforgettable adventure awaits.</h3>
+    </section>
+  </main>
+  <script>
+    setInterval(() => {
+      let topBackground = document.querySelector("section.background-image");
+      let currentBackground = window.getComputedStyle(topBackground).backgroundImage;
+
+      if (currentBackground.includes('pexels-ryutaro-5746227.jpg')) {
+        topBackground.style.backgroundImage = 'url("../src/image/pexels-blackbearmedia-1673978.jpg")';
+      } else if (currentBackground.includes('pexels-blackbearmedia-1673978.jpg')) {
+        topBackground.style.backgroundImage = 'url("../src/image/pexels-arkkrapol-anantachote-89654-1571746.jpg")';
+      } else if (currentBackground.includes('pexels-arkkrapol-anantachote-89654-1571746.jpg')) {
+        topBackground.style.backgroundImage = 'url("../src/image/pexels-satoshi-2070033.jpg")';
+      } else {
+        topBackground.style.backgroundImage = 'url("../src/image/pexels-ryutaro-5746227.jpg")';
+      }
+    }, 3000);
+  </script>
+
+</body>
+
+</html>
