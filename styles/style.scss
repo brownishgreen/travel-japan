@@ -43,6 +43,12 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+      -webkit-box-shadow: 0 10px 6px -6px #777;
+        -moz-box-shadow: 0 10px 6px -6px #777;
+        box-shadow: 0 10px 6px -6px #777;
 
     section.logo {
       display: flex;
